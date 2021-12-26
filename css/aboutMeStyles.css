@@ -1,0 +1,498 @@
+body {
+  background-color: #708090;
+}
+:hover .chartValues .justBlack {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+*:hover .chartValues .reactCyan {
+  opacity: 1;
+  transition-delay: 1.75s;
+}
+*:hover .chartValues .SASSpink {
+  opacity: 1;
+  transition-delay: 3s;
+}
+*:hover .chartValues .reduxPurple {
+  opacity: 1;
+  transition-delay: 4.25s;
+}
+*:hover .chartValues .CSSblue {
+  opacity: 1;
+  transition-delay: 5.5s;
+}
+
+#about {
+  height: 100vh;
+  width: auto;
+}
+
+.about_me {
+  display: grid;
+  grid-gap: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  grid-template-columns: repeat(3, [col] 33%);
+  grid-template-rows: repeat(3, [row] auto);
+  background-color: #00ffff;
+  margin-top: 9vh;
+  /* margin-bottom: 1em; */
+}
+
+.One {
+  grid-column: col;
+  grid-row: row / span 3;
+  background-color: #708090;
+}
+.Two {
+  grid-column: col 2;
+  grid-row: row;
+  color: black;
+  height: 29vh;
+  background-color: #708090;
+}
+.Three {
+  grid-column: col 2;
+  grid-row: row 2 / span 2;
+  width: 100%;
+  height: 59vh;
+  background-color: #708090;
+}
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.chart {
+  color: white;
+  font-size: 1.75vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  text-align: center;
+}
+.chartValues {
+  position: absolute;
+  font-size: 1.65vh;
+  margin-top: 1.5vh;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  text-align: center;
+}
+.justBlack {
+  color: white;
+  opacity: 0;
+}
+.reactCyan {
+  color: white;
+  opacity: 0;
+}
+.SASSpink {
+  color: white;
+  opacity: 0;
+}
+.reduxPurple {
+  opacity: 0;
+  color: white;
+}
+.CSSblue {
+  opacity: 0;
+  color: white;
+}
+.Four {
+  grid-column: col 3;
+  grid-row: row;
+  color: black;
+  height: 29vh;
+  background-color: #708090;
+}
+.Five {
+  grid-column: col 3;
+  grid-row: row 2;
+  color: black;
+  height: 29vh;
+  background-color: #708090;
+}
+.Six {
+  height: 29vh;
+  grid-column: col 3;
+  grid-row: row 3;
+  color: black;
+  background-color: #708090;
+}
+
+.row {
+  margin: 0px 0px 0px 0px;
+  transform: scale(1.1);
+}
+.row::after {
+  content: "";
+  clear: both;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: "Josefin Slab";
+  height: 100vh;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 17px 12px 17px 12px;
+}
+.containerbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.container1 {
+  position: relative;
+  display: block;
+  width: 333px;
+  height: 80px;
+  background: #708090;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverdiv1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  box-sizing: border-box;
+  font-size: 0.55em;
+  text-align: center;
+}
+
+.container1:hover .hoverdiv1,
+.container1:active .hoverdiv1 {
+  opacity: 1;
+}
+.hoverdiv1:hover {
+  transform: translate(-16px, 0);
+}
+.row:hover {
+  transform: translate(0, 0, 15px);
+}
+.container1:hover {
+  transform: scale(1.15);
+}
+
+.react_Project_1 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #00ffff;
+}
+.icon1 {
+  margin-top: -24%;
+}
+.moveUp1 {
+  margin-top: -25%;
+}
+.react_Title_1 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #00ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.react_Title_1:hover {
+  color: #fff;
+}
+.react_Project_2 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #00ffff;
+}
+.react_Title_2 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #00ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.react_Title_2:hover {
+  color: #fff;
+}
+
+.container2 {
+  position: relative;
+  display: block;
+  width: 333px;
+  height: 80px;
+  background: #708090;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverdiv2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  box-sizing: border-box;
+  font-size: 0.55em;
+  text-align: center;
+}
+
+.container2:hover .hoverdiv2,
+.container2:active .hoverdiv2 {
+  opacity: 1;
+}
+.hoverdiv2:hover {
+  transform: translate(-16px, 0);
+}
+.row:hover {
+  transform: translate(0, 0, 15px);
+}
+.container2:hover {
+  transform: scale(1.15);
+}
+
+.SASS_Project_1 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #ff00ff;
+}
+.icon2 {
+  margin-top: -24%;
+}
+.moveUp2 {
+  margin-top: -25%;
+}
+.SASS_Title_1 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #ff00ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.SASS_Title_1:hover {
+  color: #00ff00;
+}
+.SASS_Project_2 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #ff00ff;
+}
+.SASS_Title_2 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #ff00ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.SASS_Title_2:hover {
+  color: #00ff00;
+}
+
+.container3 {
+  position: relative;
+  display: block;
+  width: 333px;
+  height: 80px;
+  background: #708090;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverdiv3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  box-sizing: border-box;
+  font-size: 0.55em;
+  text-align: center;
+}
+
+.container3:hover .hoverdiv3,
+.container3:active .hoverdiv3 {
+  opacity: 1;
+}
+.hoverdiv3:hover {
+  transform: translate(-16px, 0);
+}
+.row:hover {
+  transform: translate(0, 0, 15px);
+}
+.container3:hover {
+  transform: scale(1.15);
+}
+
+.redux_Project_1 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #8f00ff;
+}
+.icon3 {
+  margin-top: -38px;
+}
+.moveUp3 {
+  margin-top: -41px;
+}
+.redux_Title_1 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #8f00ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.redux_Title_1:hover {
+  color: red;
+}
+
+.redux_Project_2 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #8f00ff;
+}
+.redux_Title_2 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #8f00ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.redux_Title_2:hover {
+  color: red;
+}
+
+.container4 {
+  position: relative;
+  display: block;
+  width: 333px;
+  height: 80px;
+  background: #708090;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.hoverdiv4 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  box-sizing: border-box;
+  font-size: 0.55em;
+  text-align: center;
+}
+
+.container4:hover .hoverdiv4,
+.container4:active .hoverdiv4 {
+  opacity: 1;
+}
+.hoverdiv4:hover {
+  transform: translate(-16px, 0);
+}
+.row:hover {
+  transform: translate(0, 0, 15px);
+}
+.container4:hover {
+  transform: scale(1.15);
+}
+
+.css3_Project_1 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #0000ff;
+}
+.icon4 {
+  margin-top: -36px;
+}
+.moveUp4 {
+  margin-top: -38px;
+}
+.css3_Title_1 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #0000ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.css3_Title_1:hover {
+  color: black;
+}
+.css3_Project_2 {
+  border-radius: 30%;
+  border: 1px solid #000000;
+  padding: 5.5px;
+  background: #0000ff;
+}
+.css3_Title_2 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #0000ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.css3_Title_2:hover {
+  color: black;
+}

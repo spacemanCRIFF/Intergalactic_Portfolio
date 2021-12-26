@@ -1,0 +1,205 @@
+.text2 {
+  opacity: 0;
+  transition: all 0.3s ease;
+  bottom: 0;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+.buttonsColumn {
+  width: 33vh;
+  flex: 33%;
+}
+.spacemanButton {
+  height: 140px;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px transparent;
+  display: flex;
+  box-shadow: 0 0 0px 0px rgba(100, 100, 255, 0.4);
+  opacity: 1;
+  position: relative;
+  background-position: center center;
+  cursor: pointer;
+  background-blend-mode: color-burn;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.6s ease;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  background-image: url(../images/spacemanSmall.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 47%;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  animation-name: floating1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.spacemanButton:hover {
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  border: 1px solid white;
+}
+.spacemanButton:hover ~ .text2 {
+  opacity: 1;
+}
+.sataliteButton {
+  height: 140px;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px transparent;
+  display: flex;
+  box-shadow: 0 0 0px 0px rgba(100, 100, 255, 0.4);
+  opacity: 1;
+  position: relative;
+  background-position: center center;
+  cursor: pointer;
+  background-blend-mode: color-burn;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.6s ease;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  background-image: url(../images/satalite.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  animation-name: floating2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+}
+.sataliteButton:hover {
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  border: 1px solid white;
+}
+.sataliteButton:hover ~ .text2 {
+  opacity: 1;
+}
+.lunarModButton {
+  font-family: "Raleway", sans-serif;
+  height: 140px;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px transparent;
+  display: flex;
+  box-shadow: 0 0 0px 0px rgba(100, 100, 255, 0.4);
+  opacity: 1;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.6s ease;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  background-image: url(../images/lunarModSmall.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  animation-name: floating3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+}
+.lunarModButton:hover {
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  border: 1px solid white;
+}
+.lunarModButton:hover ~ .text2 {
+  opacity: 1;
+}
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  35% {
+    transfrom: translate(0, 7px);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  75% {
+    transfrom: translate(-4, -7px);
+  }
+  100% {
+    transform: translate(-8, -0px);
+  }
+}
+@keyframes floating2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  35% {
+    transfrom: translate(0, 7px);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  75% {
+    transfrom: translate(-4, -7px);
+  }
+  100% {
+    transform: translate(-8, -0px);
+  }
+}
+@keyframes floating3 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  35% {
+    transfrom: translate(0, 7px);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  75% {
+    transfrom: translate(-4, -7px);
+  }
+  100% {
+    transform: translate(-8, -0px);
+  }
+}
+/* Clear floats after image containers 
+   .buttonsRow::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .buttonsContainer2 {
+      font-family: 'Raleway', sans-serif;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 30vh;
+      padding: 15vh;
+      overflow: hidden;
+      -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;  
+      background: transparent; } /*radial-gradient(ellipse at bottom, #1b2735, #090a0f);*/
