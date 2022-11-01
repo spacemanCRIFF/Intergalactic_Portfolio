@@ -1,0 +1,64 @@
+#contact {
+    justify-content: center;
+}
+#grid {
+    margin-top: -7vh;
+    justify-content: center;
+    display: grid;
+    grid-gap: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    grid-template-columns: repeat(3, [col] 33%);
+    grid-template-rows: repeat(3, [row] auto);
+    background-color: transparent;
+   /* margin-bottom: 1em; */
+}
+
+#textMessage {
+  margin-top: 5vh;
+  grid-column: col / span 3;
+  grid-row: row;
+}
+.menu {
+    margin-top: -8vh;
+    margin-bottom: 1.5vh;
+    grid-column: col / span 3;
+    grid-row: row 2;
+}
+.menu2 {
+    grid-column: col / span 3;
+    grid-row: row 3;
+}
+.menu {
+    font-family: "Raleway", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.buttons {
+    font-family: "Raleway", sans-serif;
+    height: 120px;
+    border-radius: 20%;
+    border: 1px solid #fff;
+    display: flex;
+    box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+    opacity: 1;
+    position: relative;
+    background-position: center center;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease; 
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
